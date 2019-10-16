@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: indianred;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#balk {
+    background-color: white;
+    width: 80%;
+    height: 15%;
+    display: flex;
+}
+
+#container {
+    background:cadetblue;
+    width: 60%;
+    height: 25%;
+}
+
+#menu {
+    background-color: burlywood;
+    width: 60%;
+    height: 25%;
+}
