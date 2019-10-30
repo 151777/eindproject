@@ -81,6 +81,13 @@ a:hover{
     pointer-events: all;
 }
 
+
+.active {
+  background-color: #ff5500;
+}
+
+
+
 /* voor kleine schermen */
 @media all and (max-width: 575px) {
   body {
