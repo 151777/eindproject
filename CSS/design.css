@@ -1,29 +1,96 @@
-html {
+html, body {
     height: 100%;
-}
-
-body {
-    background-color: indianred;
-    padding: 0;
+    width: 100%;
     margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body-grid {
+    display: grid;
+    grid-template-areas:
+        "nav article photos"
+        "nav footer footer";
+    grid-template-rows: 1fr 70px;
+    grid-template-columns: 20% 1fr 15%;
     height: 100%;
+    margin: 0;
+    background-image: url(https://www.thedesignlove.com/wp-content/uploads/2012/09/TDL-Pattern-01.jpg);
+  }
+#pageHeader {
+    background: #000;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle {
+  grid-area: article;
+  }
+#mainNav {
+  grid-area: nav;
+  }
+#sitePhotos {
+  grid-area: photos;
+  }
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    display: table;
 }
 
-#balk {
-    background-color: white;
-    width: 80%;
-    height: 15%;
-    display: flex;
+li {
+    transition-duration: 0.5s;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+li:hover {
+  cursor: pointer;
+}
+a {
+    padding: 20px 40px;
+    display: block;
+    color: #fff;
+    font-family: verdana;
+    text-decoration: none;
+}
+a:hover{
+    color: #d2d2d2;
+}
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    pointer-events: none;
+    background: #000;
+}
+.dropdown > li {
+    clear: both;
+}
+.dropdown-hover:hover > .dropdown {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
 }
 
-#container {
-    background:cadetblue;
-    width: 60%;
-    height: 25%;
-}
-
-#menu {
-    background-color: burlywood;
-    width: 60%;
-    height: 25%;
+/* voor kleine schermen */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "photos"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+ }
 }
