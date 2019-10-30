@@ -86,6 +86,7 @@ a:hover{
 }
 .dropdown > li {
     clear: both;
+    width: 100%;
 }
 .dropdown-hover:hover > .dropdown {
     visibility: visible;
