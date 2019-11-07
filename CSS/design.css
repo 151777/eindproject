@@ -59,6 +59,7 @@ li {
     float: left;
     position: relative;
     list-style: none;
+    overflow: hidden;
 }
 li:hover {
   cursor: pointer;
@@ -393,7 +394,6 @@ span.psw {
      width: 100%;
   }
 }
-
 
 /* voor kleine schermen */
 @media all and (max-width: 768px) {
