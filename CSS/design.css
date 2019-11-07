@@ -24,8 +24,8 @@ html, body {
         "nav article photos"
         "nav footer footer";
     grid-template-rows: 1fr 70px;
-    grid-template-columns: 20% 1fr 15%;
-    height: 100%;
+    grid-template-columns: 15% 1fr 15%;
+    min-height: 100%;
     margin: 0;
     background-image: url(https://www.thedesignlove.com/wp-content/uploads/2012/09/TDL-Pattern-01.jpg);
 
@@ -104,22 +104,10 @@ a:hover{
     margin-top: 20px;
     border-radius: 20px;
     border: 5px solid gray;
-
+    clear: both;
+    overflow: auto;
 }
 
-#Instrumentalmusic2 {
-    margin-top: 166px;
-    border-radius: 20px;
-    border: 5px solid gray;
-
-}
-
-#Instrumentalmusic3 {
-    margin-top: 166px;
-    border-radius: 20px;
-    border: 5px solid gray;
-
-}
 
 #Instrumentaltext {
     margin-top: 20px;
@@ -227,7 +215,7 @@ a:hover{
 
 .soundpacks {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 100%;
   margin-top: 50px;
   text-align: center;
   font-family: arial;
@@ -266,18 +254,12 @@ a:hover{
   float: left;
   width: 25%;
   padding: 0 10px;
+
 }
 
 /* voor kleine schermen */
-@media all and (max-width: 575px) {
-  body {
-    grid-template-areas:
-      "header"
-      "article"
-      "photos"
-      "nav"
-      "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;
-    grid-template-columns: 1fr;
- }
+@media all and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
 }
