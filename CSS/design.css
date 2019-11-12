@@ -10,12 +10,6 @@ html, body {
     box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #333;
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-}
 
 .navlogono {
     float: right;
