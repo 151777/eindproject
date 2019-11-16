@@ -15,7 +15,7 @@ html, body {
 
 .navlogono {
     float: right;
-    width: 14.5%;
+    width: 278px;
     margin-right: -50px;
     border-radius: 50px;
     transform: translateX(0%);
@@ -24,10 +24,10 @@ html, body {
 .navlogo {
     float: right;
     animation: slideleft 1s cubic-bezier(0.04, 0.71, 0.18, 0.99);
-    width: 14.5%;
     margin-right: -50px;
     border-radius: 50px;
     transform: translateX(0%);
+    width: 278px;
 }
 
 @keyframes slideleft {
@@ -80,7 +80,7 @@ html, body {
 
 ul, ol {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: table;
 }
 
@@ -277,19 +277,22 @@ a:hover{
 
 .row {
     margin: 0 -5px;
+    
 }
+
 
 .row:after {
   content: "";
   display: table;
   clear: both;
   
+  
 }
 
 .column {
   float: left;
   width: 25%;
-  padding: 0 10px;
+  padding: 0px 10px;
 }
 
 
@@ -426,11 +429,9 @@ span.msgtext {
     padding: 1.5rem;
     font-size: 1.5rem;
     border-radius: 20px;
-}
-
-.home-text {
     background: right/contain content-box border-box no-repeat white;
 }
+
 
 .home-text > h2,
 .home-text > p {
@@ -445,5 +446,29 @@ span.msgtext {
     .column {
         width: 100%;
     }
-    
+    .navlogono {
+    float: right;
+    width: 0px;
+    margin-right: -50px;
+    border-radius: 50px;
+    transform: translateX(0%);
+}
+
+.navlogo {
+    float: right;
+    animation: slideleft 1s cubic-bezier(0.04, 0.71, 0.18, 0.99);
+    margin-right: -50px;
+    border-radius: 50px;
+    transform: translateX(0%);
+    width: 0px;
+}
+a {
+    padding: 20px 30px;
+    display: block;
+    color: #fff;
+    font-family: verdana;
+    text-decoration: none;
+}
+
+
 }
