@@ -512,7 +512,7 @@ span.msgtext {
 	font-family: "Open Sans", "Helvetica Neue", sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 6em;
+	font-size: 700%;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
 	text-shadow: 4px 4px 0px rgba(161, 103, 35, 0.842);
@@ -547,5 +547,18 @@ a {
     text-decoration: none;
 }
 
+.comingsoon {
+	margin-top: 10px;
+	color: rgb(253, 165, 65);
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 300%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	text-shadow: 4px 4px 0px rgba(161, 103, 35, 0.842);
+    border-radius: 50px;
+    background-color: rgba(128, 128, 0, 0.233);
+}
 
 }
