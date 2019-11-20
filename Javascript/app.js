@@ -14,8 +14,10 @@ $('.music-card').click(function() {
     triggerMusic($(this));
 });
 
-
+var audio;
 function triggerMusic(music_card) {
+
+    audio = null;
 
     var music_url = music_card.data('music_url')
     var audio = new Audio(music_url);
