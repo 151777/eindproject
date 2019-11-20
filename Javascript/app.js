@@ -18,12 +18,11 @@ var audio;
 function triggerMusic(music_card) {
 
     audio = null;
-
     var music_url = music_card.data('music_url')
-    var audio = new Audio(music_url);
+    audio = new Audio(music_url);
     audio.volume = 1;
     audio.autoplay = false;
-
+    console.log(audio);
     if (audio.paused == false) {
         audio.pause();
         music_card.find('.fa-play').show();
